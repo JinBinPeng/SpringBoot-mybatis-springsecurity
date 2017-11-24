@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cache
+    username: root
+    password: 1997
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+mybatis:
+  type-aliases-package: com.us.example.domain
+  mapper-locations: classpath*:mapper/*.xml
+debug: true
